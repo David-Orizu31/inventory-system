@@ -78,31 +78,13 @@
                     <td>1</td>
                     <td>8000</td>
                     <td>
-                      <button type="button" class="btn btn-transfer text-white" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Transfer</button>
+                      <button type="button" class="btn btn-transfer text-white" data-toggle="modal" data-target="#staticBackdrop">Transfer</button>
                     </td>
                 </tr>   
 
                 
             </table>
-            <div class="collapse" id="collapseExample">
-              <form action="">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                <select name="points" id="points" class="selectpicker form-control">
-                   <option value="0" selected disabled>Select Points</option>
-                   <option value="25">25 points</option>
-                   <option value="50">50 points</option>
-                   <option value="75">75 points</option>
-                   <option value="100">100 points</option>
-                </select>
-              </div>
-
-              <div class="col-md-6 form-group">
-                <button type="submit" class="btn btn-transfer text-white" style="height: 36px !important;">Transfer</button>
-              </div>
-                </div>
-              </form>
-          </div>
+ 
             </div>
 
         </div>
@@ -113,6 +95,41 @@
 
   </div>
   <!-- /#wrapper -->
+
+  <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Transfer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form action="">
+
+            <div class="form-group">
+              <label for="name"><strong>Bar Point</strong></label>
+              <input type="text" class="form-control" name="name" id="name" placeholder="Bar Point's Name">
+            </div>
+            <div class="form-group">
+              <label for="amount"><strong>Amount</strong></label>
+              <input type="text" class="form-control" name="amount" id="amount" placeholder="8000">
+            </div>
+            <br>
+            <div class="form-group">
+              <button type="submit" class="btn btn-danger" style="width: 100%; border-radius: 0px;">Transfer</button>
+            </div>
+
+        </form>
+      
+      </div>
+      
+    </div>
+  </div>
+</div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
