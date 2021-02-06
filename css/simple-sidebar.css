@@ -1,0 +1,100 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+ #wrapper {
+    overflow-x: hidden;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  background-color: rgb(180, 50, 80);
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+.list-group .list-group-item.active {
+  background-color: white !important;
+  color: rgb(180, 50, 80);
+  border-color: grey !important;
+}
+
+.list-group .list-group-item:hover {
+  background-color: white !important;
+  color: rgb(180, 50, 80) !important;
+}
+
+.side-options {
+  background-color: rgb(180, 50, 80) !important;
+  color: white;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+
+}
+
+.btn-toggle {
+  color: rgb(180, 50, 80);
+  font-size: 22px !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-toggle:hover {
+  color: rgb(180, 50, 80);
+}
+
+.dashboard-area {
+  padding: 20px;
+}
+
+.btn-add {
+  background-color: rgb(180, 50, 80);
+  float: right;
+  font-size: 15px;
+}
+
+.btn-transfer {
+  font-size: 14px;
+  background-color: rgb(200, 50, 80);
+  height: 50% !important;
+}
+
+
+

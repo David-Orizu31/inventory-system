@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Inventory System</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class=" border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Inventory System</div>
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action side-options">Dashboard</a>
+        <a href="category.html" class="list-group-item list-group-item-action side-options">Category</a>
+        <a href="stocks.html" class="list-group-item list-group-item-action side-options active">Stocks</a>
+        <a href="bar-point.html" class="list-group-item list-group-item-action side-options">Bar Point</a>
+        <a href="waiters.html" class="list-group-item list-group-item-action side-options">Waiters</a>
+        <a href="sales.html" class="list-group-item list-group-item-action side-options">Sales</a>
+        <a href="transfer-history.html" class="list-group-item list-group-item-action side-options">Transfer History</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <button class="btn btn-toggle" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+
+
+      </nav>
+
+      <div class="container-fluid">
+
+        <div class="dashboard-area">
+
+            <div>
+                
+                    <h4>Add Stock</h4>
+                
+                
+            </div>
+
+            <br>
+
+            <form action="">
+
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="name"><strong>Name</strong></label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Stock's Name">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="category"><strong>Category</strong></label>
+                        <select name="category" id="category" class="selectpicker form-control">
+                            <option value="1">Drinks</option>
+                            <option value="2">Beverages</option>
+                            <option value="3">Juice</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="description"><strong>Description</strong></label>
+                        <textarea name="description" id="description" class="form-control" placeholder="Describe Stock"></textarea>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="stock"><strong>Stock</strong></label>
+                        <input type="number" id="stock" name="stock" class="form-control" placeholder="1">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="defective-stock"><strong>Defective Stock</strong></label>
+                        <input type="number" id="defective-stock" name="defective-stock" class="form-control" placeholder="1">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="price"><strong>Price</strong></label>
+                        <input type="text" class="form-control" name="price" id="price" placeholder="Stock's Price">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-add text-white">Save</button>
+                </div>
+
+            </form>
+
+        </div>
+        
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
