@@ -77,9 +77,32 @@
                     <td>2</td>
                     <td>1</td>
                     <td>8000</td>
-                    <td><button type="button" class="btn btn-transfer text-white">Transfer</button></td>
-                </tr>
+                    <td>
+                      <button type="button" class="btn btn-transfer text-white" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Transfer</button>
+                    </td>
+                </tr>   
+
+                
             </table>
+            <div class="collapse" id="collapseExample">
+              <form action="">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                <select name="points" id="points" class="selectpicker form-control">
+                   <option value="0" selected disabled>Select Points</option>
+                   <option value="25">25 points</option>
+                   <option value="50">50 points</option>
+                   <option value="75">75 points</option>
+                   <option value="100">100 points</option>
+                </select>
+              </div>
+
+              <div class="col-md-6 form-group">
+                <button type="submit" class="btn btn-transfer text-white" style="height: 36px !important;">Transfer</button>
+              </div>
+                </div>
+              </form>
+          </div>
             </div>
 
         </div>
@@ -101,6 +124,8 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
+
+   
   </script>
 
 </body>
