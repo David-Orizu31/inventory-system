@@ -48,28 +48,39 @@
 
       <div class="container-fluid">
             <div class="dashboard-area">
-              <h4>Category  <a href="add-category.html" type="button" class="btn btn-add text-white">Add Category</a></h4>
+              <h4>Add Category</h4>
+
             
             <br>
+            <form action="">
 
-            <div class="table-responsive">
-                 <table class="table table-hover table-striped">
-                <tr>
-                    <th>Id</th>
-                    <th>Grade</th>
-                    <th>Product</th>
-                    <th>Price</th>
-                    
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Beverages</td>
-                    <td>Hot Chocolate</td>
-                    <td>500</td>
-                    
-                </tr>
-            </table>
-            </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="name"><strong>Product</strong></label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Product's Name">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="grade"><strong>Grade</strong></label>
+                        <select name="grade" id="grade" class="selectpicker form-control">
+                          <option value="1">Drinks</option>
+                          <option value="2">Beverages</option>
+                          <option value="3">Juice</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="price"><strong>Price</strong></label>
+                        <input type="text" class="form-control" name="price" id="price" placeholder="Category's Price">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-add text-white">Save</button>
+                </div>
+
+            </form>
 
       </div>
     </div>
