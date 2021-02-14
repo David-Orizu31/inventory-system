@@ -96,5 +96,19 @@
   height: 50% !important;
 }
 
+.box {
+  border: 1px solid rgb(180, 50, 80);
+  border-radius: 3px;
+  margin: 20px;
+  padding: 20px;
+}
 
+.box h5 {
+  color: rgb(180, 50, 80);
+}
+
+.box span {
+   color: rgb(44, 40, 40);
+   font-size: 22px;
+}
 
